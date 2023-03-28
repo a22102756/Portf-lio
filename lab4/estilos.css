@@ -217,7 +217,7 @@ a:hover {
 }
 
 /*RESPONSIVE DESIGN*/
-@media(max-width:992px) {
+@media screen and (max-width:470px) {
 
     .navbar .links,
     .navbar .action_btn {
@@ -235,27 +235,53 @@ a:hover {
     .logo {
         margin: 10px;
     }
+    
+    .left-col {
+        display: flex; 
+    }
+        
+    h1 {
+        top: 0;
+        color: white;
+        font-size: 38px;
+    }
+
+    .subhead {
+        right:14%;
+        left: 400%;
+        top: 0;
+        z-index: 5;
+        font-size: 18px;
+    }
 
     .indexVideo { 
-        width: 50%;
-        height: 50%;
-        margin-top: 0;
-        z-index: 4;
+        top: 110%;
+        left: 45%;
+        z-index: 6;
+        position: relative;
+        width:200px;
+        margin-right: 40%;
+        z-index: -7;
+         
     }
 
 }
 
-@media(max-width:600px) {
-    * {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+@media screen and (min-width:602px) {
 
     body {
         background: url(images/wallpaperflare.com_wallpaper.jpg)no-repeat;
         background-color:#BCBFC6;
         background-size: cover;
+    }
+
+    main {
+        z-index: -5;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    header {
+        z-index: 7;
     }
     
     .dropdown_menu {
@@ -263,31 +289,25 @@ a:hover {
     }
         
     h1 {
+        top: 0;
         color: white;
-        font-size: 28px;
-    }
-
-    .left-col {
-        display: grid;
-        grid-template-columns: auto; 
-        grid-template-rows: auto auto; 
-        grid-gap: 10px; 
-        width: auto;
-        padding: 30px;
-        
+        font-size: 38px;
     }
 
     .subhead {
-        min-width: 200px;
+        right:14%;
+        left: 400%;
+        top: 0;
         z-index: 5;
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .indexVideo { 
-        width: 0%;
-        height: 0%;
-        margin-top: 0;
-        z-index: -1;
+        margin: 200px;
+        top: 70px;
+        left: 40%;
+        z-index: 6;
+        position: relative;
     }
 
     .subscribe {
