@@ -2,7 +2,7 @@
 <html lang="pt">
 
 <head>
-    <title>Tumblr Vibes</title>
+    <title>Hello You</title>
     <meta charset="utf-8">
     <meta name="author" content="Joana Okica">
     <meta name="description" content="Website sobre Paris">
@@ -388,7 +388,7 @@
         }
 
         /*RESPONSIVE DESIGN*/
-        @media(max-width:992px) {
+        @media only screen and (max-width:790px) {
 
             .navbar .links,
             .navbar .action_btn {
@@ -401,6 +401,10 @@
                 display: block;
             }
 
+            .text-box h1 {
+                font-size: 40px;
+            }
+
             .logo {
                 /*quando a pagina é minimzada vais precisar deste espaço entre o logo e a estrutura itself*/
                 margin: 10px;
@@ -408,21 +412,6 @@
 
             .dropdown_menu {
                 display: block;
-            }
-        }
-
-        @media(max-width:816px) {
-            .dropdown_menu {
-                left: 2rem;
-                width: unset;
-            }
-
-            .text-box {
-                margin-top: 40px;
-            }
-
-            .text-box h1 {
-                font-size: 40px;
             }
 
             .right-align {
@@ -438,12 +427,34 @@
                 color: #acc8d7;
             }
 
+        }
+
+        @media only screen and (min-width:816px) {
+            .dropdown_menu {
+                left: 2rem;
+                width: unset;
+            }
+
+            .text-box {
+                margin-top: 40px;
+            }
+
+            .text-box h1 {
+                font-size: 120px;
+            }
+
             .svg {
                 top: 0px;
-                right: -50px;
                 left: -250px;
                 margin-top: 470px;
                 margin-left: 100px;
+            }
+
+            .right-align {
+                top: 0px;
+                margin-top: 470px;
+                z-index: 1;
+                color: #acc8d7;
             }
 
         }
@@ -457,7 +468,7 @@
             <div class="navbar" style="z-index: 3;">
                 <ul class="links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="../index.html">Lab2</a></li>
+                    <li><a href="../lab2/index.html">Lab2</a></li>
                     <li><a href="../lab3/index.html">Lab3</a></li>
                     <li><a href="paralax.html">Paralax</a></li>
                     <li><a href="imagens.html">Images</a></li>
@@ -476,43 +487,40 @@
                 <li><a href="imagens.html">Images</a></li>
                 <li><a href="animacoes.html">Animações</a></li>
                 <li><a href="videoPage.html">Video</a></li>
-                <li><a href="../index.html">Lab2</a></li>
+                <li><a href="../lab2/index.html">Lab2</a></li>
                 <li><a href="../lab3/index.html">Lab3</a></li>
             </div>
         </header>
 
         <main>
-            <div>
-                <div class="text-box" style="margin-top: -90px; margin-left: 50px;">
-                    <p style="color:whitesmoke" tyle="z-index: -1">I'M</p>
-                    <h1 style="line-height: 1.5;">DREAMING</h1>
-                    <h3 style="line-height: 1.5;">and so are you</h3>
-                </div>
-                <div class="right-align">
-                    <h2 id="right-align-title">Life being lively</h2>
-                    <p style="font-size: 14px; font-family: 'Times New Roman', Times, serif; ">
-                        Drifting in a world full of possibilities,<br>
-                        My heart feels both light and heavy,<br>
-                        So many paths to take, so many doors to open,<br>
-                        Yet the thought of choice makes me frozen. <br>
-
-                        The endless choices can be overwhelming, <br>
-                        So many decisions to make, so much calculating, <br>
-                        Every move feels like a step into the unknown, <br>
-                        I'm adrift in a sea of possibilities, all alone. <br>
-
-                        But amidst the chaos and uncertainty, <br>
-                        I cling to hope and serenity, <br>
-                        For though the road may seem unclear, <br>
-                        I know that I can overcome my fear. <br>
-                    </p>
-                </div>
-                <div class="svg">
-                    <img src="images/svg.svg" alt="svg descreto">
-                </div>
-
-
+            <div class="text-box" style="margin-top: -90px; margin-left: 50px;">
+                <p style="color:whitesmoke" tyle="z-index: -1">I'M</p>
+                <h1 style="line-height: 1.5;">DREAMING</h1>
+                <h3 style="line-height: 1.5;">and so are you</h3>
             </div>
+            <div class="right-align">
+                <h2 id="right-align-title">Life being lively</h2>
+                <p style="font-size: 14px; font-family: 'Times New Roman', Times, serif; ">
+                    Drifting in a world full of possibilities,<br>
+                    My heart feels both light and heavy,<br>
+                    So many paths to take, so many doors to open,<br>
+                    Yet the thought of choice makes me frozen. <br>
+
+                    The endless choices can be overwhelming, <br>
+                    So many decisions to make, so much calculating, <br>
+                    Every move feels like a step into the unknown, <br>
+                    I'm adrift in a sea of possibilities, all alone. <br>
+
+                    But amidst the chaos and uncertainty, <br>
+                    I cling to hope and serenity, <br>
+                    For though the road may seem unclear, <br>
+                    I know that I can overcome my fear. <br>
+                </p>
+            </div>
+            <div class="svg">
+                <img src="images/svg.svg" alt="svg descreto">
+            </div>
+
 
             <div class="bubble">
                 <div><span class="dot"></span></div>
