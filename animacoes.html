@@ -40,9 +40,7 @@
         }
 
         body {
-            display: flex;
-            background-image: url(images/underwater.jpg);
-            background-color: #032433;
+            background-image: url(https://source.unsplash.com/5kwVYW8ZIHo);
             background-size: cover;
             background-repeat: no-repeat;
             min-height: 100vh;
@@ -208,7 +206,7 @@
         /*second part*/
         .bubble {
             height: 100%;
-            width: 100%;
+            width: 200%;
             position: absolute;
         }
 
@@ -388,8 +386,8 @@
         }
 
         /*RESPONSIVE DESIGN*/
-        @media only screen and (max-width:790px) {
-
+        @media only screen and  (max-width:810px) {
+           
             .navbar .links,
             .navbar .action_btn {
                 margin-right: 1em;
@@ -405,6 +403,10 @@
                 font-size: 40px;
             }
 
+            .bubble{
+                width: 400%;
+            }
+
             .logo {
                 /*quando a pagina é minimzada vais precisar deste espaço entre o logo e a estrutura itself*/
                 margin: 10px;
@@ -418,10 +420,10 @@
                 text-align: center;
                 justify-content: center;
                 align-items: center;
-                top: 0px;
+                top: 70px;
                 right: -250px;
                 left: -100px;
-                margin-top: 470px;
+                margin-top: 370px;
                 margin-left: 100px;
                 z-index: 1;
                 color: #acc8d7;
@@ -439,24 +441,22 @@
                 margin-top: 40px;
             }
 
+            .bubble{
+                width: 300%;
+            }
             .text-box h1 {
                 font-size: 120px;
             }
 
-            .svg {
-                top: 0px;
-                left: -250px;
-                margin-top: 470px;
-                margin-left: 100px;
-            }
-
             .right-align {
-                top: 0px;
-                margin-top: 470px;
                 z-index: 1;
                 color: #acc8d7;
+                line-height: 2.0;
+                top: 0px;
+                color: whitesmoke;
             }
 
+        
         }
     </style>
 </head>
@@ -500,7 +500,7 @@
             </div>
             <div class="right-align">
                 <h2 id="right-align-title">Life being lively</h2>
-                <p style="font-size: 14px; font-family: 'Times New Roman', Times, serif; ">
+                <p style="font-size: 18px; font-family: 'Times New Roman', Times, serif; ">
                     Drifting in a world full of possibilities,<br>
                     My heart feels both light and heavy,<br>
                     So many paths to take, so many doors to open,<br>
