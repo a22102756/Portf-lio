@@ -424,6 +424,42 @@ footer {
   z-index: 4;
 }
 
+
+/* Popup for contact*/
+.popup {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  background: #be765e;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  top: 70px;
+  right: -80px;
+  width: 1000%;
+  height: 100vh;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  width: 1500%;
+  height: 80vh;
+  display: flex;
+}
 /*Calculadora*/
 .container_calculator {
   width: 100%;

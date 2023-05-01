@@ -76,19 +76,19 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list" id="nav-list">
                     <li class="nav__item active">
-                        <a href="#">Intro</a>
+                        <a href="index.html" class="nav__link">Intro</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Who</a>
+                        <a href="index.html" class="nav__link">Who</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Work</a>
+                        <a href="blog.html" class="nav__link">Activities</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">About this Website</a>
+                        <a href="index.html" class="nav__link">About this Website</a>
                     </li>
                     <li class="nav__item popup" onclick="myFunction()">
-                        <a href="#">Contact</a>
+                        <a href="#" class="nav__link">Contact</a>
                         <div class="popuptext" id="myPopup"> MUUIA</div>
                     </li>
                 </ul>
@@ -247,6 +247,12 @@
         };
     });
 </script>
-
+<script>
+    // When the user clicks on div, open the popup
+    function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+    }
+</script>
 
 </html>
