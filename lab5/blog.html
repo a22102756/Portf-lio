@@ -46,7 +46,7 @@
             z-index: 1;
         }
 
-        .parallax-text {
+        /*.parallax-text {
             position: fixed;
             top: 50%;
             left: 50%;
@@ -54,9 +54,8 @@
             z-index: 4;
             text-align: center;
             color: whitesmoke;
-        }
 
-        #frase {
+              #opening {
             position: absolute;
             top: 30%;
             left: 50%;
@@ -65,10 +64,38 @@
             color: white;
             text-shadow: 2px 2px 2px black;
         }
+        }*/
 
-        .imagem {
+        #frase {
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 4;
+            color: whitesmoke;
+        }
+
+        #opening {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+            color: white;
+            text-shadow: 2px 2px 2px black;
             align-items: center;
         }
+
+        #teste {
+            position: relative;
+        }
+        .imagem {
+            align-items: center;
+            display: block; 
+            margin: auto;
+        }
+  
     </style>
 </head>
 
@@ -115,10 +142,10 @@
 
 
     <main>
-        <section class="section container">
+        <section class="section container" id="teste">
             <div>
                 <img id="imagem" src="images/proj3.jpg" alt="Imagem" width="500" height="300">
-                <h1 id="frase"></h1>
+                <h1 id="frase">Insere o teu nome</h1>
                 <form>
                     <input type="text" id="nome" placeholder="Insira o seu nome" autofocus>
                     <input type="submit">
@@ -126,7 +153,7 @@
             </div>
         </section>
 
-        <section class="container_calculator">
+        <section class="container_calculator" >
             <div class="about__container grid">
                 <h1>
                     Bora fazer algumas contas!
@@ -185,7 +212,7 @@
                     <img src="images/rembkg-removebg-preview.png" alt="">
                 </div>
                 <div class="parallax-text" id="parallax-text">
-                    <h1>Welcome to My Parallax Page</h1>
+                    <h1 id="opening">Welcome to My Parallax Page</h1>
                     <p>This page is under maitenance</p>
                 </div>
             </div>

@@ -209,6 +209,21 @@ footer {
     z-index: var(--z-fixed);
   }
 
+  .home__container,
+  .home {
+    padding: 10rem o 5rem;
+  }
+
+  .home__container {
+    align-items: center;
+  }
+
+  .home__img {
+    width: 480;
+    order: 1;
+  }
+
+
 }
 
 .nav__close {
