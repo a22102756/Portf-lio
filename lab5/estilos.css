@@ -677,6 +677,14 @@ form input.operator {
   border-radius: 5px;
 }
 
+.parallax-text h1 {
+  display: none;
+}
+
+.parallax-container:hover .parallax-text h1 {
+  display: block;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
