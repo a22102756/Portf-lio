@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="swiper-bundle.min.css">
 </head>
 
 <body>
@@ -36,7 +35,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list" id="nav-list">
                     <li class="nav__item active">
-                        <a href="#" class="nav__link">Intro</a>
+                        <a href="home.html" class="nav__link">Intro</a>
                     </li>
                     <li class="nav__item">
                         <a href="#home" class="nav__link">Who</a>
@@ -45,11 +44,11 @@
                         <a href="blog.html" class="nav__link">Activities</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">About this Website</a>
+                        <a href="home.html" class="nav__link">About this Website</a>
                     </li>
                     <li class="nav__item popup" onclick="myFunction()">
                         <a href="#" class="nav__link">Contact</a>
-                        <div class="popuptext" id="myPopup">Email: 123.@alunos.ulht.pt</div>
+                        <div class="popuptext" id="myPopup"> MUUIA</div>
                     </li>
                 </ul>
 
@@ -70,128 +69,31 @@
     </header>
 
     <main class="main">
-        <section class="home" id="home">
-            <div class="home__container container grid">
-                <img src="images/imagem12345.png" alt="" class="home__img">
+        <video autoplay muted loop id="myVideo">
+            <source src="images/20220809_172259.mp4" type="video/mp4">
+        </video>
 
-                <div class="home__data">
-                    <h2 class="home__title">
-                        <strong>Joana Okica</strong>
-                    </h2>
-                    <p class="home__description">
-                        I'm a computer science student who is passionate about exploring the world around me. I have a
-                        deep love for travel, and I always look
-                        for opportunities to learn about new cultures, people, and places. As a CS student, I also enjoy
-                        exploring the endless possibilities of technology and how it can be used to make a positive
-                        impact on society.
-                    </p>
-                    <a href="#cv" class="button button--flex">
-                        Download CV
-                        <i class="ri-arrow-right-down-line button__icon"></i>
-                    </a>
-                </div>
-
-                <div class="home__social">
-                    <span class="home__social-follow">Social Media</span>
-
-                    <div class="home__social-links">
-                        <a href="https://www.instagram.com/joana.okica/" class="home__social-link" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="https://github.com/a22102756/a22102756-portfolio" class="home__social-link"
-                            target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/joana-okica/" class="home__social-link" target="_blank"><i
-                                class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="about section container" id="about">
-            <div class="about__container grid">
-                <img src="images/travel-world.jpg" alt="">
-                <div class="about__data">
-                    <h2 class="section__title about__title">
-                        Czym jest Lorem Ipsum?
-                    </h2>
-                    <p class="about__description">
-                        Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.
-                        Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej
-                        książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie
-                        niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu,
-                        zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum
-                        oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus
-                        PageMaker
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="discover section container" id="discover">
-            <h2 class="section__title">
-                Projetos
-            </h2>
-            <p>Araste imagem para esquerda ou direita</p>
-            <div class="discover__container container swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="discover__card swiper-slide">
-                        <a href=""><img src="images/project 1.jpg" alt="" class="discover__img"></a>
-                        <div class="discover__data">
-                            <h2 class="discover__title">Projeto 1</h2>
-                            <span class="discover__description">Trabalho trabalho trabalho trabalho</span>
-                        </div>
-                    </div>
-
-                    <div class="discover__card swiper-slide">
-                        <a href=""><img src="images/proj2.jpg" alt="" class="discover__img"></a>
-                        <div class="discover__data">
-                            <h2 class="discover__title">Projeto 2</h2>
-                            <span class="discover__description">Trabalho trabalho trabalho trabalho</span>
-                        </div>
-                    </div>
-                    <div class="discover__card swiper-slide">
-                        <a href=""><img src="images/proj3.jpg" alt="" class="discover__img"></a>
-                        <div class="discover__data">
-                            <h2 class="discover__title">Projeto 3</h2>
-                            <span class="discover__description">Trabalho trabalho trabalho trabalho</span>
-                        </div>
-                    </div>
-                    <div class="discover__card swiper-slide">
-                        <a href=""><img src="images/proj4.jpg" alt="" class="discover__img"></a>
-                        <div class="discover__data">
-                            <h2 class="discover__title">Projeto 4</h2>
-                            <span class="discover__description">Trabalho trabalho trabalho trabalho</span>
-                        </div>
-                    </div>
-                    <div class="discover__card swiper-slide">
-                        <a href=""><img src="images/proj5.jpg" alt="" class="discover__img"></a>
-                        <div class="discover__data">
-                            <h2 class="discover__title">Projeto 5</h2>
-                            <span class="discover__description">Trabalho trabalho trabalho trabalho</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="content">
+            <h1>Welcome to my portfolio</h1>
+        </div>
 
     </main>
-
-    <footer>
-        <p>Today is: <span id="date"></span></p>
-    </footer>
+      <div style="display: none; user-select: none;" aria-hidden="true">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rkcc1HizUZc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <div style="display: none; user-select: none;" aria-hidden="true">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rkcc1HizUZc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
 </body>
 
-<script>
-    const currentDate = new Date();
-    const dateElement = document.getElementById("date");
-    dateElement.innerHTML = currentDate.toDateString();
-</script>
-
-<script>
-    const p = document.querySelector('.home__description');
-    p.classList.add('visible');
-</script>
-
-<script src="swiper-bundle.min.js"></script>
 <!--Sim eu sei que podia fazer tudo num só scrip mas é mais facil se estiver organizado em varios. Pelo menos por agora-->
 <script>
     /*==================== SHOW MENU ====================*/
@@ -225,7 +127,6 @@
     }
     navLink.forEach(n => n.addEventListener('click', linkAction))
 </script>
-
 <script>
     /*==================== DARK LIGHT THEME ====================*/
     const themeButton = document.getElementById('theme-button')
@@ -257,7 +158,6 @@
         localStorage.setItem('selected-icon', getCurrentIcon())
     })
 </script>
-
 <script>
     // Wait for window load
     window.onload = function () {
@@ -278,22 +178,6 @@
         }, 1000);
     }
 </script>
-
-
-
-<script>
-    var swiper = new Swiper(".discover__container", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        loop: true,
-        spaceBetween: 32,
-        coverflowEffect: {
-            rotate: 0,
-        },
-    });
-</script>
 <script>
     // When the user clicks on div, open the popup
     function myFunction() {
@@ -301,6 +185,5 @@
         popup.classList.toggle("show");
     }
 </script>
-
 
 </html>

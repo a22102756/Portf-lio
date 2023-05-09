@@ -41,9 +41,9 @@
 
 .dark-theme {
   --title-color: whitesmoke;
-  --primary-color: #c5905e;
+  --primary-color: #ad733d;
   --secondary-color: black;
-  --container-color: brown;
+  --container-color: rgb(189, 110, 46);
   --first-color: whitesmoke;
 }
 
@@ -330,7 +330,7 @@ footer {
 
 .button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: black;
   color: white;
   padding: 1rem 1.75rem;
   border-radius: .5rem;
